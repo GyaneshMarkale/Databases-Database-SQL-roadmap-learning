@@ -1,0 +1,35 @@
+# Database & SQL Glossary
+
+- **ACID:** Atomicity, Consistency, Isolation and Durability.
+- **Aggregate:** A function such as COUNT, SUM, MIN, MAX or AVG that summarizes rows.
+- **Anomaly:** An unexpected concurrency or redundancy-related outcome, such as a lost update or update anomaly.
+- **B-tree:** An ordered, balanced index structure used for common lookup, range and sort access.
+- **Candidate key:** A minimal attribute set that uniquely identifies a row.
+- **Cardinality:** Often the number of distinct values in a column, or the number of rows in an input/result; state which meaning is intended.
+- **CTE:** Common table expression, a named query result introduced with WITH.
+- **Denormalization:** Intentional duplication or precomputation to serve an access pattern or snapshot requirement.
+- **Dirty read:** Reading another transaction's uncommitted data.
+- **Execution plan:** The operations chosen by the optimizer to execute a query.
+- **Foreign key:** A constraint enforcing a reference to a valid key in a related table.
+- **Functional dependency:** X → Y means X determines Y according to the modeled domain rules.
+- **Index selectivity:** How restrictive a predicate is; a smaller fraction of matching rows is more selective.
+- **Isolation level:** The concurrency guarantees provided by a transaction.
+- **Keyset pagination:** Pagination by a stable cursor/key instead of skipping an offset.
+- **Lost update:** A concurrent modification is overwritten by another update.
+- **MVCC:** Multi-version concurrency control, a way to manage concurrent reads/writes using row versions.
+- **N+1 query:** A query pattern where loading a list is followed by many extra queries to load related data.
+- **Natural key:** A domain-meaningful identifier, such as a SKU.
+- **Normalization:** Organizing relations using dependencies to reduce particular forms of redundancy and anomalies.
+- **OLAP:** Online analytical processing; scan/aggregate-oriented workloads.
+- **OLTP:** Online transactional processing; short, correctness-sensitive application operations.
+- **Optimistic locking:** Detecting conflicting modification, often using a version number.
+- **Pessimistic locking:** Acquiring locks before completing a sensitive decision/update.
+- **Phantom read:** Repeating a predicate query and observing a different set of rows under an isolation model that permits it.
+- **Pool exhaustion:** Requests cannot obtain a database connection from a bounded pool quickly enough.
+- **Primary key:** The selected key that identifies each table row.
+- **Query plan cost:** A planner estimate used to compare alternatives, not elapsed milliseconds.
+- **Row grain:** The exact real-world fact represented by one row in a table/result.
+- **Sargability:** Whether a predicate can efficiently use an index to find a search range.
+- **Serialization failure:** A transaction failure raised when the database detects an unsafe serializable execution.
+- **Surrogate key:** An artificial identifier used as row identity.
+- **Write skew:** Concurrent transactions update different rows based on a shared read view and jointly violate an invariant.
